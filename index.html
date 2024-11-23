@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronin 22</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/principal.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/perfi.jpg') }}" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark">
+        <div class="container">
+            <!--Responsivo-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Opciones del navbar-->
+            <div class="collapse navbar-collapse" id="Menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="apartado" href="#">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="apartado">Catálogo de bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="apartado">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('audd') }}" class="apartado">Audd</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img src="{{ url_for('static', filename='imagenes/portada.jpg')}}" alt="Imagen de cabecera">
+    </header>
+
+    <main>
+        <section class="botones-circulares">
+            <div class="boton-contenedor">
+                <div class="boton">
+                    <img src="{{ url_for('static', filename='imagenes/invitados.jpg') }}"
+                        alt="Invitados y DJs Especiales">
+                </div>
+                <div class="boton-texto">
+                    <p>Invitados y DJs Especiales</p>
+                </div>
+            </div>
+            <div class="boton-contenedor">
+                <div class="boton">
+                    <img src="{{ url_for('static', filename='imagenes/promos.jpg') }}" alt="Promociones">
+                </div>
+                <div class="boton-texto">
+                    <p>Promociones</p>
+                </div>
+            </div>
+            <div class="boton-contenedor">
+                <div class="boton">
+                    <img src="{{ url_for('static', filename='imagenes/vestimenta.jpg') }}" alt="Código de Vestimenta">
+                </div>
+                <div class="boton-texto">
+                    <p>Código de Vestimenta</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenido">
+            <div class="info-container">
+                <div class="texto">
+                    <h2>RONIN ANTRO ACAPULCO</h2>
+                    <p>Horario de apertura: Todos los días a partir de las 9:00 PM hasta las 3:00 AM</p>
+                    <p>Música: Hip Hop, Electrónica y Reggaeton</p>
+                    <p>Cuando estés en Acapulco, debes dedicar una de tus noches a Ronin 22. Noches increíbles, la mejor
+                        música y su fachada abierta desde la cual puedes admirar todo lo que implica ser la discoteca
+                        favorita de la ciudad, es solo una pequeña parte de la "experiencia". ¡Atrévete a conocer Ronin
+                        22 Acapulco!</p>
+                    <h3>EL CHECK-IN DEBE REALIZARSE ANTES DE LAS 22:30</h3>
+                    <p>Todas las reservas son garantizadas hasta las 22:30 horas, después de esa hora las mesas/Acceso o
+                        cualquier reserva estarán sujetas a disponibilidad y deberá consultarse en el local.</p>
+                    <p><strong>Al llegar se solicitará una identificación oficial y la tarjeta utilizada para
+                            reservar.</strong></p>
+                    <p>El "Paquete Locales-Residentes" solo se puede validar mostrando una identificación oficial
+                        emitida en Cancún. De lo contrario, para acceder a Mandala, se requerirá un cargo de 100 USD.
+                    </p>
+                    <ul>
+                        <li>Paquetes de 'Bachelor o Bachelorette' son promociones exclusivas para hombres o mujeres,
+                            dependiendo del paquete y sus especificaciones.</li>
+                        <li>Si se compran múltiples paquetes —incluso de la misma categoría— las mesas no estarán una al
+                            lado de la otra.</li>
+                        <li>Todas las inclusiones son válidas para llegadas antes de las 11:30 PM; después de esa hora,
+                            las bengalas con sus botellas pueden ser canceladas o pueden variar.</li>
+                        <li>Cada paquete incluye solo un (1) espectáculo de bengalas con botellas.</li>
+                        <li>No se permiten cambios o alteraciones a ningún paquete. Las opciones de botellas ofrecidas
+                            en cada paquete son exclusivas y no pueden cambiarse por otras opciones no ofrecidas. Para
+                            obtener una botella específica que no esté incluida en tu paquete, puedes solicitarla en el
+                            lugar y pagarla al precio regular del menú.</li>
+                    </ul>
+                </div>
+                <video src="{{ url_for('static', filename='imagenes/principal.mp4') }}" autoplay loop
+                controls></video>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de redes sociales -->
+<section class="redes-sociales">
+    <h3>Sigue nuestras redes sociales o contáctanos</h3>
+    <a href="https://www.facebook.com/ronin22acapulco?mibextid=ZbWKwL" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/facebook.jpg') }}" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/ronin22aca?igsh=OXQ0MWVwMnk5bDRu" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/instagram.jpg') }}" alt="Instagram">
+    </a>
+    <a href="https://wa.me/" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/whatsapp.jpg') }}" alt="WhatsApp">
+    </a>
+    <a href="mailto:example@gmail.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/gmail.jpg') }}" alt="Gmail">
+    </a>
+</section>
+
+<!-- Añadir espacio y el texto de ubicación -->
+<section class="ubicacion">
+    <h4>¿Cómo llegar a Ronin 22 en Acapulco?</h4>
+    <div class="mapa-container">
+        <iframe src="https://maps.google.com/maps?q=Acapulco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Añade este código debajo del mapa existente en tu página -->
+<footer style="background-color: #000; padding: 20px; color: white; text-align: center;">
+    <div
+        style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
+        <div style="flex: 1; text-align: center;">
+            <img src="{{ url_for('static', filename='imagenes/log.jpg') }}" alt="Ronin 22"
+                style="width: 100px;">
+            <p>Ronin22.com</p>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#" style="color: white;">POLÍTICA DE PRIVACIDAD</a></li>
+                <li><a href="#" style="color: white;">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="#" style="color: white;">FAQS</a></li>
+                <li><a href="#" style="color: white;">CONTÁCTANOS</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h3>ASOCIACIONES</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>Universidad Tecnológica de Acapulco</li>
+                <li>Grupo Marea</li>
+            </ul>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h3>Pagos Aceptados</h3>
+            <img src="{{ url_for('static', filename='imagenes/american-express.png') }}" alt="Mastercard"
+                style="width: 50px; margin-right: 10px;">
+            <img src="{{ url_for('static', filename='imagenes/visa.png') }}" alt="Visa"
+                style="width: 50px; margin-right: 10px;">
+            <img src="{{ url_for('static', filename='imagenes/tarjeta-de-credito.png') }}"
+                alt="American Express" style="width: 50px;">
+        </div>
+    </div>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="https://www.facebook.com/ronin22acapulco?mibextid=ZbWKwL"><img
+                src="{{ url_for('static', filename='imagenes/facebook.jpg') }}" alt="Facebook" style="width: 30px; margin-right: 10px;"></a>
+        <a href="https://www.instagram.com/ronin22aca?igsh=OXQ0MWVwMnk5bDRu"><img
+                src="{{ url_for('static', filename='imagenes/instagram.jpg') }}" alt="Instagram"
+                style="width: 30px; margin-right: 10px;"></a>
+        <a href="#"><img src="{{ url_for('static', filename='imagenes/whatsapp.jpg') }}" alt="WhatsApp"
+                style="width: 30px; margin-right: 10px;"></a>
+        <a href="mailto:example@gmail.com"><img src="{{ url_for('static', filename='imagenes/gmail.jpg') }}"
+                alt="Gmail" style="width: 30px;"></a>
+    </div>
+    <p style="font-size: 14px;">© Derechos Reservados para el Grupo Marea 2024</p>
+</footer>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+</html>
